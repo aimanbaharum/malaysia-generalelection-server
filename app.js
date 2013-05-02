@@ -1,4 +1,6 @@
-var express = require('express');
+var express = require('express')
+  , routes = require('./routes')
+  , api = require('./routes/api');
 
 var app = module.exports = express();
 
@@ -11,6 +13,10 @@ app.configure(function() {
   app.use(express.static(__dirname + '/public'));
   app.use(app.router);
 });
+
+app.get('/api', api.index);
+app.get('/api/parliament', api.parliament);
+app.get('/api/state', api.state);
 
 // Start server
 app.listen(3000, function() {
