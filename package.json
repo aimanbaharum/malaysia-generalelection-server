@@ -1,6 +1,9 @@
 {
   "name": "malaysia-generalelection-server"
   , "version": "0.1.0"
+  , "scripts": {
+    "test": "grunt test"
+  }
   , "dependencies": {
       "express": "> 3.0"
     , "jade": ">= 0.0.1"
