@@ -1,7 +1,7 @@
 {
   "name": "malaysia-generalelection-server",
   "version": "0.1.0",
-  "dependencies" : {
+  "dependencies": {
     "restify": ">2.4"
   },
   "devDependencies": {
