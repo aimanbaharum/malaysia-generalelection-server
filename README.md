@@ -1,4 +1,5 @@
-# Malaysia Elections Data API
+# Malaysia Elections Data API 
+[![Build Status](https://travis-ci.org/shernshiou/malaysia-generalelection-server.png)](https://travis-ci.org/shernshiou/malaysia-generalelection-server)
 
 ## Contribute
 
