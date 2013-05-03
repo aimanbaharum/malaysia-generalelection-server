@@ -1,8 +1,9 @@
 var express = require('express')
   , routes = require('./routes')
-  , api = require('./routes/api');
+  , Api = require('./routes/api');
 
-var app = module.exports = express();
+var app = module.exports = express()
+  , api = new Api(app);
 
 // Configuration
 app.configure(function() {
@@ -14,9 +15,7 @@ app.configure(function() {
   app.use(app.router);
 });
 
-app.get('/api', api.index);
-app.get('/api/parliament', api.parliament);
-app.get('/api/state', api.state);
+api.routes();
 
 // Start server
 app.listen(3000, function() {
