@@ -5,8 +5,8 @@ var chai = require('chai')
 
 chai.use(chaiHttp);
 
-describe("API Test", function() {
-  it("tests the root", function(done) {
+describe("RESTful API Response Tests", function() {
+  it("tests api root response", function(done) {
     chai.request(app)
       .get('/api')
       .res(function (res) {
