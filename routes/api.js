@@ -12,6 +12,7 @@ Api.prototype.routes = function() {
     res.json({ description: "This is Malaysia General Election Data API" });
   });
   app.get('/api/parliament', parliament.all);
+  app.get('/api/parliament/:id', parliament.findSingle);
   app.get('/api/state', state.all);
 };
 

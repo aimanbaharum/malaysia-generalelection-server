@@ -5,31 +5,55 @@ var chai = require('chai')
 
 chai.use(chaiHttp);
 
-describe("RESTful API Response Tests", function() {
+describe("General API Response Tests", function() {
   it("tests api root response", function(done) {
     chai.request(app)
       .get('/api')
-      .res(function (res) {
+      .res(function(res) {
         res.should.have.status(200);
         res.body.should.deep.equal({ description: "This is Malaysia General Election Data API" });
         done();
       });
   });
+});
 
-  it("checks the parliament data", function(done) {
+describe("Parliament Data API Tests", function() {
+  it("should return all parliament data", function(done) {
     chai.request(app)
       .get('/api/parliament')
-      .res(function (res) {
+      .res(function(res) {
         res.should.have.status(200);
         res.body.should.have.length(222);
         done();
       });
   });
 
-  it("checks the state data", function(done) {
+  it("should return Sungai Petani given P15 as id", function(done) {
+    chai.request(app)
+      .get('/api/parliament/P15')
+      .res(function(res) {
+        res.should.have.status(200);
+        res.body.should.have.property('name')
+          .and.equal("Sungai Petani");
+        done();
+      });
+  });
+
+  it("should return 404 when given invalid id", function(done) {
+    chai.request(app)
+      .get('/api/parliament/ARGHHHH')
+      .res(function(res) {
+        res.should.have.status(404);
+        done();
+      });
+  });
+});
+
+describe("State Data API Tests", function() {
+  it("should return all state data", function(done) {
     chai.request(app)
       .get('/api/state')
-      .res(function (res) {
+      .res(function(res) {
         res.should.have.status(200);
         res.body.should.have.length(576);
         done();

@@ -15,6 +15,7 @@ app.configure(function() {
   app.use(app.router);
 });
 
+// API Routes
 api.routes();
 
 // Start server
