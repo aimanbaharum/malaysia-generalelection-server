@@ -39,7 +39,7 @@ describe("Parliament Data API Tests", function() {
       });
   });
 
-  it("should return 404 when given invalid id", function(done) {
+  it("should return 404 when given parliament invalid id", function(done) {
     chai.request(app)
       .get('/api/parliament/ARGHHHH')
       .res(function(res) {
@@ -58,5 +58,25 @@ describe("State Data API Tests", function() {
         res.body.should.have.length(576);
         done();
       })
+  });
+
+  it("should return Bakar Arang given N43 as id", function(done) {
+    chai.request(app)
+      .get('/api/state/N43')
+      .res(function(res) {
+        res.should.have.status(200);
+        res.body.should.have.property('name')
+          .and.equal("Bakar Arang");
+        done();
+      });
+  });
+
+  it("should return 404 when given invalid state id", function(done) {
+    chai.request(app)
+      .get('/api/state/OPPPSS')
+      .res(function(res) {
+        res.should.have.status(404);
+        done();
+      });
   });
 });
