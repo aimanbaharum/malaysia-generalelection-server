@@ -1,7 +1,5 @@
-var parliament = require('./api/parliament');
-
-
-var state_seats = require('../data/state_seats');
+var parliament = require('./api/parliament')
+  , state = require('./api/state');
 
 
 exports.index = function (req, res) {
@@ -9,7 +7,4 @@ exports.index = function (req, res) {
 };
 
 exports.parliament = parliament.all;
-
-exports.state = function (req, res) {
-  res.json(state_seats);
-};
+exports.state = state.all;
