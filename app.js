@@ -19,6 +19,12 @@ app.configure(function() {
 api.routes();
 
 // Start server
-app.listen(3000, function() {
-  console.log("Express server listening on port %d in %s mode", this.address().port, app.settings.env);
+app.configure('development', function() {
+  app.listen(3000, function() {
+    console.log("Express server listening on port %d in %s mode", this.address().port, app.settings.env);
+  });
+});
+
+app.configure('production', function() {
+  app.listen(80);
 });
