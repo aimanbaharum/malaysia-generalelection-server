@@ -1,19 +1,24 @@
 {
-  "name": "malaysia-generalelection-server"
-  , "version": "0.1.0"
-  , "scripts": {
+  "name": "malaysia-generalelection-server",
+  "subdomain": "malaysia-ge", 
+  "version": "0.1.0", 
+  "scripts": {
+    "start": "app.js",
     "test": "grunt test"
-  }
-  , "dependencies": {
+  },
+  "engines": {
+    "node": "0.10.x"
+  }, 
+  "dependencies": {
       "express": "> 3.0"
     , "jade": ">= 0.0.1"
-  }
-  , "devDependencies": {
-      "grunt": "~0.4.1"
-    , "grunt-simple-mocha": ">= 0.4.0"
-    , "mocha": ">= 1.9.0"
-    , "chai": ">= 1.6.0"
-    , "chai-http": ">= 0.3.0"
-    , "grunt-cli": "*"
+  }, 
+  "devDependencies": {
+    "grunt": "~0.4.1", 
+    "grunt-simple-mocha": ">= 0.4.0", 
+    "mocha": ">= 1.9.0", 
+    "chai": ">= 1.6.0", 
+    "chai-http": ">= 0.3.0", 
+    "grunt-cli": "*"
   }
 }
