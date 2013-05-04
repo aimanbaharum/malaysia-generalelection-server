@@ -1,7 +1,7 @@
 {
   "name": "malaysia-generalelection-server",
   "subdomain": "malaysia-ge",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "scripts": {
     "start": "node app.js",
     "test": "grunt test"

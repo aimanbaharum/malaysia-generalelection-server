@@ -80,7 +80,7 @@ Base URL: `http://malaysia-ge.jitsu.com/api`
 
 Status
 ------
-+ Nodejitsu [![Nodejitsu Deploy Status Badges](https://webhooks.nodejitsu.com/shernshiou/malaysia-generalelection-server.png)](https://webops.nodejitsu.com#shernshiou/webhooks)
++ Nodejitsu [![Nodejitsu Deploy Status Badges](https://webhooks.nodejitsu.com/shernshiou/malaysia-generalelection-server.png)](https://webops.nodejitsu.com#shernshiou/malaysia-generalelection-server)
 + Travis [![Build Status](https://travis-ci.org/shernshiou/malaysia-generalelection-server.png)](https://travis-ci.org/shernshiou/malaysia-generalelection-server)
 
 
