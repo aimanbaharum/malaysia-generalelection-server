@@ -3,7 +3,7 @@
   "subdomain": "malaysia-ge", 
   "version": "0.1.0", 
   "scripts": {
-    "start": "app.js",
+    "start": "node app.js",
     "test": "grunt test"
   },
   "engines": {
