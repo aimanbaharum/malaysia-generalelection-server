@@ -1,5 +1,5 @@
 # Malaysia Elections Data API 
-[![Build Status](https://travis-ci.org/shernshiou/malaysia-generalelection-server.png)](https://travis-ci.org/shernshiou/malaysia-generalelection-server)
+[![Build Status](https://travis-ci.org/shernshiou/malaysia-generalelection-server.png)](https://travis-ci.org/shernshiou/malaysia-generalelection-server)[![Nodejitsu Deploy Status Badges](https://webhooks.nodejitsu.com/nodejitsu/handbook.png)](https://webops.nodejitsu.com#nodejitsu/webhooks)
 
 ## Contribute
 
