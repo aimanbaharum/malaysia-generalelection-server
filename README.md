@@ -1,6 +1,6 @@
 Malaysia Elections Data API
 =============================
-This serves as a means to provide Open Data access for Malaysia General Election information. Currently, information, it only serves seats information (Parliament and States). More information like election results, candidates will be coming soon. Stay tunes.
+This serves as a means to provide Open Data access for Malaysia General Election information. Currently, it only serves seats information (both Parliament and State). More information like election results, candidates will be coming soon. Stay tunes.
 
 API
 ---
@@ -86,5 +86,7 @@ Status
 
 Contribute
 ----------
-Initial parliament and state seats data are contributed by [Kven Ho](https://github.com/imkven).
+- Initial parliament and state seats data are contributed by [Kven Ho](https://github.com/imkven).
+- Election results contributed by [kiawin](https://github.com/kiawin).
+
 Contributions and pull requests are welcomed.
