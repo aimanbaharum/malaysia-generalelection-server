@@ -5,7 +5,8 @@ exports.all = function (req, res) {
 };
 
 exports.findSingle = function(req, res) {
-  for(var i=0; len = state_seats.length; i<len; i++) {
+  var len = state_seats.length;
+  for(var i=0; i<len; i++) {
     if(state_seats[i].id === req.params.id) {
       res.json(state_seats[i]);
     }
