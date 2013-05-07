@@ -39,6 +39,17 @@ describe("Parliament Data API Tests", function() {
       });
   });
 
+  it("should return Sungai Petani given p15 (lowercaps) as id", function(done) {
+    chai.request(app)
+      .get('/api/parliament/p15')
+      .res(function(res) {
+        res.should.have.status(200);
+        res.body.should.have.property('name')
+          .and.equal("Sungai Petani");
+        done();
+      });
+  });
+
   it("should return 404 when given parliament invalid id", function(done) {
     chai.request(app)
       .get('/api/parliament/ARGHHHH')
@@ -70,6 +81,18 @@ describe("State Data API Tests", function() {
         done();
       });
   });
+
+  it("should return Bakar Arang given n43 (lowercaps) as id", function(done) {
+    chai.request(app)
+      .get('/api/state/n43')
+      .res(function(res) {
+        res.should.have.status(200);
+        res.body.should.have.property('name')
+          .and.equal("Bakar Arang");
+        done();
+      });
+  });
+
 
   it("should return 404 when given invalid state id", function(done) {
     chai.request(app)
