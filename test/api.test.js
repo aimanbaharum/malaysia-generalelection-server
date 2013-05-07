@@ -83,13 +83,15 @@ describe("State Data API Tests", function() {
       })
   });
 
-  it("should return Bakar Arang given N43 as id", function(done) {
+  it("should return Bakar Arang with parliament geo location given N43 as id", function(done) {
     chai.request(app)
       .get('/api/state/N43')
       .res(function(res) {
         res.should.have.status(200);
         res.body.should.have.property('name')
           .and.equal("Bakar Arang");
+        res.body.should.have.property('parliament_geo_lat')
+          .and.equal("5.649024");
         done();
       });
   });
