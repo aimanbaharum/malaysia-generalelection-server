@@ -88,5 +88,6 @@ Contribute
 ----------
 - Initial parliament and state seats data are contributed by [Kven Ho](https://github.com/imkven).
 - Election results contributed by [kiawin](https://github.com/kiawin).
+- Election results (2013) contributed by [meeepy](https://www.facebook.com/meeepy).
 
 Contributions and pull requests are welcomed.
