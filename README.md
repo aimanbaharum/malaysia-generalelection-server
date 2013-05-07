@@ -91,7 +91,9 @@ Base URL: `http://malaysia-ge.jitsu.com/api`
   geo_lat: "6.130400",
   geo_lng: "100.368050",
   parliament_id: "P9",
-  parliament_name: "Alor Star"
+  parliament_name: "Alor Star",
+  parliament_geo_lat: "6.119359",
+  parliament_geo_lng: "100.367691"
 }
 ```
 
