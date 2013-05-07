@@ -6,7 +6,7 @@ exports.all = function (req, res) {
 
 exports.findSingle = function(req, res) {
   for(var i=0, len = state_seats.length; i<len; i++) {
-    if(state_seats[i].id === req.params.id) {
+    if(state_seats[i].id === req.params.id.toUpperCase()) {
       res.json(state_seats[i]);
     }
   }
