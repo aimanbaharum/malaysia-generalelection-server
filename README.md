@@ -32,11 +32,28 @@ Base URL: `http://malaysia-ge.jitsu.com/api`
 
 ```json
 {
-  id: "P3",
-  name: "Arau",
-  geo_lat: "6.414992",
-  geo_lng: "100.282341",
-  state: "Perlis"
+  id: "P4",
+  name: "Langkawi",
+  geo_lat: "6.323300",
+  geo_lng: "99.854721",
+  state: [
+    {
+      id: "N16",
+      name: "Ayer Hangat",
+      geo_lat: "6.419384",
+      geo_lng: "99.808372",
+      parliament_id: "P4",
+      parliament_name: "Langkawi"
+    },
+    {
+      id: "N17",
+      name: "Kuah",
+      geo_lat: "6.318623",
+      geo_lng: "99.850861",
+      parliament_id: "P4",
+      parliament_name: "Langkawi"
+    }
+  ]
 }
 ```
 
