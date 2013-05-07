@@ -20,6 +20,7 @@
     "mocha": ">= 1.9.0",
     "chai": ">= 1.6.0",
     "chai-http": ">= 0.3.0",
+    "chai-things": ">= 0.2.0",
     "grunt-cli": "*"
   }
 }

@@ -1,9 +1,9 @@
 var chai = require('chai')
-  , chaiHttp = require('chai-http')
   , should = chai.should()
   , app = require('./../app');
 
-chai.use(chaiHttp);
+chai.use(require('chai-http'));
+chai.use(require('chai-things'));
 
 describe("General API Response Tests", function() {
   it("tests api root response", function(done) {
@@ -46,6 +46,18 @@ describe("Parliament Data API Tests", function() {
         res.should.have.status(200);
         res.body.should.have.property('name')
           .and.equal("Sungai Petani");
+        done();
+      });
+  });
+
+  it("should return 3 state seats of Sungai Petani where one of them is Bakar Arang", function(done) {
+    chai.request(app)
+      .get('/api/parliament/p15')
+      .res(function(res) {
+        res.should.have.status(200);
+        res.body.should.have.property('state')
+          .and.have.length(3)
+          .and.contain.an.item.with.property('name', "Bakar Arang");
         done();
       });
   });
