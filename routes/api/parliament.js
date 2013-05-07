@@ -1,14 +1,15 @@
-var parliament_seats = require('../../data/parliament_seats');
+var _ = require('underscore')
+  , parliament_seats = require('../../data/parliament_seats');
 
 exports.all = function(req, res) {
   res.json(parliament_seats);
 };
 
 exports.findSingle = function(req, res) {
-  for(var i=0, len = parliament_seats.length; i<len; i++) {
-    if(parliament_seats[i].id === req.params.id.toUpperCase()) {
-      res.json(parliament_seats[i]);
-    }
+  var found = _.findWhere(parliament_seats, {id: req.params.id.toUpperCase()});
+  if(found) {
+    res.json(found);
+  } else {
+    res.send(404);
   }
-  res.send(404);
 };
