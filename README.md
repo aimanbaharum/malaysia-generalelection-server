@@ -97,6 +97,14 @@ Base URL: `http://malaysia-ge.jitsu.com/api`
 }
 ```
 
+Install
+-------
+1. Required `Node.js` to continue installation. Please download and install [Node.js](http://nodejs.org/) into your system if not exist.
+2. Download source from Github with running command `git clone git://github.com/imkven/malaysia-generalelection-server.git`.
+3. Move into cloned directory. Normaly, using command `cd malaysia-generalelection-server`.
+4. Running command `npm install` to install all dependencies.
+5. Enter command `node app.js` and try visit `http://127.0.0.1:3000/api/parliament`, you will get all parliaments data.
+
 Status
 ------
 + Nodejitsu [![Nodejitsu Deploy Status Badges](https://webhooks.nodejitsu.com/shernshiou/malaysia-generalelection-server.png)](https://webops.nodejitsu.com#shernshiou/malaysia-generalelection-server)
