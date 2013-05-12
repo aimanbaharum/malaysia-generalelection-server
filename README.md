@@ -99,12 +99,12 @@ Base URL: `http://malaysia-ge.jitsu.com/api`
 
 Install
 -------
-1. Required `Node.js` to continue installation. Please download and install [Node.js](http://nodejs.org/) into your system if not exist.
-2. Download source from Github with running command `git clone git://github.com/imkven/malaysia-generalelection-server.git`.
+1. Requires `Node.js` to continue installation. Please download and install [Node.js](http://nodejs.org/) into your system if `Node.js` does not exist in your system.
+2. Download the source from Github by running command `git clone git://github.com/shernshiou/malaysia-generalelection-server.git`.
 3. Move into cloned directory. Normaly, using command `cd malaysia-generalelection-server`.
-4. Install grunt using command `npm install grunt-cli -g`.
-5. Run command `npm install` to install all dependencies.
-6. Enter command `npm start` and try visit `http://127.0.0.1:3000/api/parliament`, you will get all parliaments data.
+4. Install grunt using command `npm install grunt-cli -g` if your `grunt` does not exist in your system.
+5. Run command `npm install` to install all the dependencies.
+6. Enter command `npm start` and visit `http://127.0.0.1:3000/api/parliament` either using cURL, your browser (or any other tools), you will get all the parliaments data.
 
 BDD Test
 --------
